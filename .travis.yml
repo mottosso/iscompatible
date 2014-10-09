@@ -4,6 +4,8 @@ python:
 - 2.7
 - 3.2
 - 3.3
+install:
+- pip install coveralls
 script:
 - nosetests --with-doctest --with-coverage
 - pip install git+git://github.com/mottosso/iscompatible.git
