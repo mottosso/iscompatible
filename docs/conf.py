@@ -46,7 +46,7 @@ if os.environ.get('READTHEDOCS', None) != 'True':
         pass
 
 html_static_path = ['_static']
-htmlhelp_basename = 'Pyblishdoc'
+htmlhelp_basename = 'iscompatibledoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
