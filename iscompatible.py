@@ -2,7 +2,7 @@
 Python versioning with requirements.txt syntax
 ==============================================
 
-:mod:`iscompatible` gives you the power of the pip requirements.txt
+iscompatible v\ |version|. gives you the power of the pip requirements.txt
 syntax for everyday python packages, modules, classes or arbitrary
 functions.
 
