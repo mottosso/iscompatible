@@ -1,5 +1,8 @@
 ### Python versioning with requirements.txt syntax
 
+[![Build Status][travis]][travis_repo]
+[![PyPI version][pypi]][pypi_repo]
+
 iscompatible gives you the power of the [pip requirements.txt][req]
 syntax for everyday python packages, modules, classes or arbitrary
 functions.
@@ -45,3 +48,8 @@ False
 >>> iscompatible("foo==5.6.1", MyPlugin.version)
 True
 ```
+
+[travis]: https://travis-ci.org/mottosso/iscompatible.svg?branch=master
+[travis_repo]: https://travis-ci.org/mottosso/iscompatible
+[pypi]: https://badge.fury.io/py/iscompatible.svg
+[pypi_repo]: http://badge.fury.io/py/iscompatible
