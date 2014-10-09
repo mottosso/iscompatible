@@ -7,7 +7,7 @@ python:
 install:
 - pip install coveralls
 script:
-- nosetests iscompatible --with-doctest --with-coverage
+- nosetests --with-doctest --with-coverage
 - pip install git+git://github.com/mottosso/iscompatible.git
 after_success:
 - coveralls

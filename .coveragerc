@@ -1,0 +1,5 @@
+[run]
+source = iscompatible
+
+[report]
+include = *iscompatible*
