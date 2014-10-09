@@ -10,11 +10,6 @@ functions. Supports Python 2.6-2.7 and Python 3.2-3.3, licensed under MIT.
 
 [req]: https://pip.readthedocs.org/en/1.1/requirements.html
 
-The requirements.txt syntax allows you to specify inexact matches
-between a set of requirements and a version. For example, let's
-assume that the single package foo-5.6.1 exists on disk. The
-following requirements are all compatible with foo-5.6.1.
-
 - [Documentation][]
 - [Issue tracker][]
 - [Wiki][]
@@ -25,8 +20,10 @@ following requirements are all compatible with foo-5.6.1.
 
 #### Example
 
-Let's assume that the single package foo-5.6.1 exists on disk.
-The following requirements are all compatible with foo-5.6.1.
+The requirements.txt syntax allows you to specify inexact matches
+between a set of requirements and a version. For example, let's
+assume that the single package foo-5.6.1 exists on disk. The
+following requirements are all compatible with foo-5.6.1.
 
 |Requirement | Description
 |------------|--------------------------------------------------
