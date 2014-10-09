@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('README.txt') as f:
     readme = f.read()
@@ -36,7 +36,7 @@ setup(
     author_email='marcus@abstractfactory.com',
     url='https://github.com/mottosso/iscompatible',
     license=license,
-    packages=find_packages(),
+    py_modules=["iscompatible"],
     zip_safe=False,
     classifiers=classifiers
 )
