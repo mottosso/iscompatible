@@ -3,9 +3,6 @@ from setuptools import setup
 with open('README.txt') as f:
     readme = f.read()
 
-with open('LICENSE') as f:
-    license = f.read()
-
 import os
 import imp
 
@@ -35,7 +32,7 @@ setup(
     author='Marcus Ottosson',
     author_email='marcus@abstractfactory.com',
     url='https://github.com/mottosso/iscompatible',
-    license=license,
+    license="MIT",
     py_modules=["iscompatible"],
     zip_safe=False,
     classifiers=classifiers
