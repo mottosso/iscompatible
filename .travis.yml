@@ -1,0 +1,15 @@
+language: python
+python:
+- 2.6
+- 2.7
+script:
+- pip install git+git://github.com/abstractfactory/pyblish.git
+deploy:
+  provider: pypi
+  user: mottosso
+  distributions: "sdist"
+  password:
+    secure: iYI2L9hC6O4t4ZBKkk2UbaLKdkDK2jrmorc6FZQ7PrvFs1gJHvE8llTlLOHbJVp+FxfUHAV9GpA50nzUuKauV1cmqUYa8/vDa9BnhrYq6BITIgERCQBgndWkL82JdFODr1nLvP7ygVk744IKhi9XTrrs7w3XVJVE6ArBquWIzvQ=
+  on:
+    tags: true
+    all_branches: true
