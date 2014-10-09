@@ -9,7 +9,7 @@ python:
 - 3.2
 - 3.3
 script:
-- pip install git+git://github.com/abstractfactory/pyblish.git
+- pip install git+git://github.com/mottosso/iscompatible.git
 deploy:
   provider: pypi
   user: mottosso
