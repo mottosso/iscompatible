@@ -59,6 +59,8 @@ def iscompatible(requirements, version):
         version (tuple): Version to compare against, e.g. (1, 0, 1)
 
     Example:
+        >>> iscompatible("foo", (1, 0, 0))
+        True
         >>> iscompatible("foo<=1", (0, 9, 0))
         True
         >>> iscompatible("foo>=1, <1.3", (1, 2, 0))
