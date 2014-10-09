@@ -2,10 +2,11 @@
 
 [![Build Status][travis]][travis_repo]
 [![PyPI version][pypi]][pypi_repo]
+[![Coverage Status][cover]][cover_repo]
 
 iscompatible gives you the power of the [pip requirements.txt][req]
 syntax for everyday python packages, modules, classes or arbitrary
-functions.
+functions. Supports Python 2.6-2.7 and Python 3.2-3.3, licensed under MIT.
 
 [req]: https://pip.readthedocs.org/en/1.1/requirements.html
 
@@ -53,3 +54,5 @@ True
 [travis_repo]: https://travis-ci.org/mottosso/iscompatible
 [pypi]: https://badge.fury.io/py/iscompatible.svg
 [pypi_repo]: http://badge.fury.io/py/iscompatible
+[cover]: https://coveralls.io/repos/mottosso/iscompatible/badge.png?branch=master
+[cover_repo]: https://coveralls.io/r/mottosso/iscompatible?branch=master
