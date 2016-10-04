@@ -18,7 +18,36 @@ functions. Supports Python 2.6-2.7 and Python 3.2-3.3, licensed under MIT.
 [Issue tracker]: https://github.com/mottosso/iscompatible/issues
 [Documentation]: http://iscompatible.readthedocs.org
 
-#### Example
+<br>
+
+### Install
+
+iscompatible can be found via PyPI.
+
+```bash
+$ pip install iscompatible
+```
+
+<br>
+
+### Usage
+
+The module contains a single function called `iscompatible`.
+
+```python
+>>> from iscompatible import iscompatible
+>>> iscompatible("foo>=5", (5, 6, 1))
+True
+>>> iscompatible("foo>=5.6.1, <5.7", (5, 0, 0))
+False
+>>> MyPlugin = type("MyPlugin", (), {'version': (5, 6, 1)})
+>>> iscompatible("foo==5.6.1", MyPlugin.version)
+True
+```
+
+<br>
+
+### Example
 
 The requirements.txt syntax allows you to specify inexact matches
 between a set of requirements and a version. For example, let's
@@ -35,17 +64,6 @@ following requirements are all compatible with foo-5.6.1.
 |foo>5, <5.7 |foo-5 or greater, but less than foo-5.7
 |foo>0, <5.7 |any foo version less than foo-5.7
 
-#### Usage
-
-```python
->>> iscompatible("foo>=5", (5, 6, 1))
-True
->>> iscompatible("foo>=5.6.1, <5.7", (5, 0, 0))
-False
->>> MyPlugin = type("MyPlugin", (), {'version': (5, 6, 1)})
->>> iscompatible("foo==5.6.1", MyPlugin.version)
-True
-```
 
 [travis]: https://travis-ci.org/mottosso/iscompatible.svg?branch=master
 [travis_repo]: https://travis-ci.org/mottosso/iscompatible
